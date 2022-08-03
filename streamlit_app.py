@@ -48,8 +48,8 @@ with tab1:
     st.write("")
 
     # Convert secrets from the TOML file to strings
-    clientSecret = str(st.secrets["installed"]["client_secret"])
-    clientId = str(st.secrets["installed"]["client_id"])
+    clientSecret = "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" #str(st.secrets["installed"]["client_secret"])
+    clientId = "919612448360-6sp6rgdk03jvis60mj0oh0tvj0pmdjnk.apps.googleusercontent.com" #str(st.secrets["installed"]["client_id"])
 
     st.markdown("")
 
@@ -84,8 +84,8 @@ with tab1:
 
         credentials = {
             "installed": {
-                "919612448360-6sp6rgdk03jvis60mj0oh0tvj0pmdjnk.apps.googleusercontent.com": clientId,
-                "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": clientSecret,
+                "client_id": clientId,
+                "client_secret": clientSecret,
                 "redirect_uris": [],
                 "auth_uri": "https://accounts.google.com/o/oauth2/auth",
                 "token_uri": "https://accounts.google.com/o/oauth2/token",
