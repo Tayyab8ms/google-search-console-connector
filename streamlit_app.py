@@ -84,8 +84,8 @@ with tab1:
 
         credentials = {
             "installed": {
-                "client_id": clientId,
-                "client_secret": clientSecret,
+                "919612448360-6sp6rgdk03jvis60mj0oh0tvj0pmdjnk.apps.googleusercontent.com": clientId,
+                "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": clientSecret,
                 "redirect_uris": [],
                 "auth_uri": "https://accounts.google.com/o/oauth2/auth",
                 "token_uri": "https://accounts.google.com/o/oauth2/token",
