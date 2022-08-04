@@ -48,8 +48,8 @@ with tab1:
     st.write("")
 
     # Convert secrets from the TOML file to strings
-    clientSecret = "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" #str(st.secrets["installed"]["client_secret"])
-    clientId = "919612448360-6sp6rgdk03jvis60mj0oh0tvj0pmdjnk.apps.googleusercontent.com" #str(st.secrets["installed"]["client_id"])
+    clientSecret = str(st.secrets["installed"]["client_secret"])
+    clientId = str(st.secrets["installed"]["client_id"])
 
     st.markdown("")
 
@@ -106,7 +106,7 @@ with tab1:
             help="Sign in to your account via Google OAuth, then paste your OAuth token in the field below.",
             type="password",
         )
-
+        
         submit_button = st.form_submit_button(
             label="Access GSC API", on_click=charly_form_callback
         )
